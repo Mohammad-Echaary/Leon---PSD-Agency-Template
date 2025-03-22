@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -10,6 +13,8 @@ body {
   --hoverColor: rgb(207, 202, 202);
   --mainColor: rgb(13, 181, 219);
   --boxShadowHover: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --darkBlue: blue;
+  --grey: rgb(214, 212, 212);
 }
 .section {
   padding-top: 70px;
@@ -33,6 +38,14 @@ a {
   display: block;
   text-transform: capitalize;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
 ul {
   list-style: none;
   padding: 0;
@@ -43,8 +56,6 @@ img {
 .header {
   margin-bottom: 100px;
   position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 .header h1 {
   letter-spacing: -5px;
@@ -65,6 +76,13 @@ img {
   left: 0;
   width: 100%;
   text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (max-width: 767px) {
+  .header p {
+    font-size: 14px;
+  }
 }
 .container {
   padding-left: 15px;
@@ -98,6 +116,8 @@ img {
   cursor: pointer;
   transition: var(--transition);
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .box:hover {
   transform: translateY(-10px);
@@ -188,7 +208,6 @@ header .container nav ul li a:hover {
   color: var(--mainColor);
 }
 .ideas .container .box h3 {
-  text-transform: capitalize;
   font-size: 25px;
 }
 
@@ -216,7 +235,6 @@ header .container nav ul li a:hover {
 
 .services .container .box .childBox .text h4 {
   margin: 0;
-  text-transform: capitalize;
   font-size: 26px;
 }
 .services .container .box:last-child {
@@ -234,15 +252,95 @@ header .container nav ul li a:hover {
   top: 0;
   width: 100px;
   height: 100%;
-  background-color: rgb(4, 4, 98);
+  background-color: var(--darkBlue);
 }
-
+.portfolio {
+  background-color: var(--grey);
+}
 .portfolio .container .box {
   background-color: white;
 }
-.portfolio .container .box .text {
-}
+
 .portfolio .container .box .text h3 {
+  font-size: 25px;
 }
-.portfolio .container .box .text p {
+.portfolio .more {
+  padding: 15px 50px;
+  border: 2px solid var(--mainColor);
+  color: var(--mainColor);
+  width: fit-content;
+  margin: 30px auto;
+  border-radius: 5px;
+  transition: var(--transition);
+  font-size: 20px;
+  background-color: white;
+}
+.portfolio .more:hover {
+  color: white;
+  background-color: var(--mainColor);
+}
+
+.about .container {
+  display: grid;
+  gap: 60px;
+}
+@media (min-width: 768px) {
+  .about .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.about .container .box {
+  position: relative;
+}
+.about .container .box p {
+  line-height: 2.4;
+}
+.about .container .box p:first-child {
+  font-weight: 900;
+  color: var(--darkBlue);
+}
+.about .container .box span {
+  display: block;
+  width: 70%;
+  height: 4px;
+  background-color: var(--mainColor);
+  margin: 40px 0;
+}
+.contact {
+  background-color: var(--grey);
+}
+.contact .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .container h2 {
+  color: var(--darkBlue);
+}
+.contact .container > a {
+  text-transform: lowercase;
+}
+.contact .container ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.contact .container ul li a {
+  font-size: 30px;
+}
+footer {
+  background-color: var(--darkBlue);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+footer span {
+  color: var(--mainColor);
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
 }
