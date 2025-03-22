@@ -8,6 +8,12 @@ body {
   --boxShadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   --transition: 0.3s;
   --hoverColor: rgb(207, 202, 202);
+  --mainColor: rgb(13, 181, 219);
+  --boxShadowHover: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .over {
   position: absolute;
@@ -19,7 +25,8 @@ body {
 }
 p {
   line-height: 1.7;
-  font-size: 20px;
+  font-size: 18px;
+  color: rgb(102, 100, 100);
 }
 a {
   text-decoration: none;
@@ -32,6 +39,32 @@ ul {
 }
 img {
   width: 100%;
+}
+.header {
+  margin-bottom: 100px;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.header h1 {
+  letter-spacing: -5px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 100px;
+  margin: 0;
+  color: rgb(234, 233, 233);
+}
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 80px;
+  }
+}
+.header p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 .container {
   padding-left: 15px;
@@ -59,6 +92,23 @@ img {
     width: 1300px;
   }
 }
+.box {
+  padding: 20px;
+  box-shadow: var(--boxShadow);
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--boxShadowHover);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
 header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -128,4 +178,71 @@ header .container nav ul li a:hover {
     font-size: 50px;
     font-weight: 500;
   }
+}
+
+.ideas .container .box {
+  text-align: center;
+}
+.ideas .container .box i {
+  font-size: 50px;
+  color: var(--mainColor);
+}
+.ideas .container .box h3 {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.services .container .box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.services .container .box .childBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 767px) {
+  .services .container .box .childBox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.services .container .box .childBox i {
+  color: var(--mainColor);
+  font-size: 40px;
+}
+
+.services .container .box .childBox .text h4 {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 26px;
+}
+.services .container .box:last-child {
+  position: relative;
+  overflow: hidden;
+}
+.services .container .box:last-child img {
+  height: 420px;
+  width: 700px;
+}
+.services .container .box:last-child::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background-color: rgb(4, 4, 98);
+}
+
+.portfolio .container .box {
+  background-color: white;
+}
+.portfolio .container .box .text {
+}
+.portfolio .container .box .text h3 {
+}
+.portfolio .container .box .text p {
 }
