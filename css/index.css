@@ -11,10 +11,10 @@ body {
   --boxShadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   --transition: 0.3s;
   --hoverColor: rgb(207, 202, 202);
-  --mainColor: rgb(13, 181, 219);
+  --mainColor: #10cab7;
   --boxShadowHover: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  --darkBlue: blue;
-  --grey: rgb(214, 212, 212);
+  --darkBlue: #2c4755;
+  --grey: #f6f6f6;
 }
 .section {
   padding-top: 70px;
@@ -26,7 +26,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(44, 71, 85, 0.8);
 }
 p {
   line-height: 1.7;
@@ -63,7 +63,7 @@ img {
   font-weight: 900;
   font-size: 100px;
   margin: 0;
-  color: rgb(234, 233, 233);
+  color: rgba(44, 71, 85, 0.1);
 }
 @media (max-width: 767px) {
   .header h1 {
@@ -184,9 +184,9 @@ header .container nav ul li a:hover {
   position: relative;
 }
 .content .text {
-  color: white;
   position: relative;
   text-align: center;
+  color: white;
 }
 .content .text h1 {
   font-size: 80px;
@@ -199,7 +199,9 @@ header .container nav ul li a:hover {
     font-weight: 500;
   }
 }
-
+.content .text p {
+  color: rgb(202, 201, 201);
+}
 .ideas .container .box {
   text-align: center;
 }
