@@ -11,7 +11,7 @@ A clean, modern, responsive website template built with HTML & CSS.
 - Google Fonts integration
 
 ## 🌐 Live Demo
-[Click here to view the site]([https://yourusername.github.io/project-folder/](https://mohammad-echaary.github.io/Leon---PSD-Agency-Template/)
+[Click here to view the site](https://mohammad-echaary.github.io/Leon---PSD-Agency-Template/)
 
 ## Tech Stack
 - HTML5
