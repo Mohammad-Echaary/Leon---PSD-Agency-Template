@@ -1,5 +1,23 @@
-### The template design
-"https://www.graphberry.com/item/leon-psd-agency-template"  
+# Leon – PSD Agency Template (Responsive)
 
-### The website using HTML and CSS
- [Leon---PSD-Agency-Template](https://mohammad-echaary.github.io/Leon---PSD-Agency-Template/)
+A clean, modern, responsive website template built with HTML & CSS.
+
+##  Features
+- Fully responsive design
+- Semantic HTML structure
+- CSS Grid & Flexbox layout
+- Hover effects & box shadows
+- Font Awesome icons
+- Google Fonts integration
+
+## 🌐 Live Demo
+[Click here to view the site]([https://yourusername.github.io/project-folder/](https://mohammad-echaary.github.io/Leon---PSD-Agency-Template/)
+
+## Tech Stack
+- HTML5
+- CSS3
+- Font Awesome
+- Google Fonts
+
+## 📩 Contact
+Feel free to reach out: mohammadechaary@gmail.com
